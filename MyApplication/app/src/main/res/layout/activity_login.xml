@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- Welcome Text Image -->
+    <ImageView
+        android:id="@+id/heyhello"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/heyhello" />
+
+    <!-- Description Text -->
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="Enter your credentials to access\n your account"
+        android:layout_marginTop="15dp"
+        android:padding="10dp" />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/loginemail"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/custom_input"
+        android:hint="Email" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:background="@drawable/custom_input"
+        android:hint="Password" />
+
+    <!-- Forgot Password Link -->
+    <TextView
+        android:id="@+id/forgotPasswordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="15sp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="80dp" />
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/blue"
+        android:textSize="16sp"
+        android:text="Sign in" />
+
+    <!-- OR Image -->
+    <ImageView
+        android:id="@+id/orSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/or" />
+
+    <!-- Sign In with Google Button -->
+    <Button
+        android:id="@+id/buttonSignInWithGoogle"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="Sign in with Google" />
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:id="@+id/textSignUpPrompt"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="Don't have an account?" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/buttonDirectToSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="Sign up"/>
+
+</LinearLayout>

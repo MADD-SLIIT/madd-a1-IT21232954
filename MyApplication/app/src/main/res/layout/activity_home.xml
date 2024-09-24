@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <ImageButton
+        android:id="@+id/btnhome"
+        android:layout_width="224dp"
+        android:layout_height="135dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitStart"
+        android:src="@drawable/logojpg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bookmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/star"
+        app:layout_constraintStart_toEndOf="@+id/btnhome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="41dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/profile_icon"
+        app:layout_constraintStart_toEndOf="@+id/bookmarks"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeimg"
+        android:layout_width="415dp"
+        android:layout_height="297dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:scaleX="1.15"
+        android:scaleY="1.15"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnhome" />
+
+    <TextView
+        android:id="@+id/hometxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="58dp"
+        android:text="Tap on a subject to continue."
+        android:textColor="@color/blue"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeimg" />
+
+    <Button
+        android:id="@+id/mathsbutn"
+        android:layout_width="294dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/blue"
+        android:text="Mathematics"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hometxt" />
+
+    <Button
+        android:id="@+id/sciencebtn"
+        android:layout_width="294dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="57dp"
+        android:backgroundTint="@color/blue"
+        android:text="Science"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mathsbutn" />
+
+    <Button
+        android:id="@+id/englishbtn"
+        android:layout_width="294dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="57dp"
+        android:backgroundTint="@color/blue"
+        android:text="English"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sciencebtn" />
+
+    <Button
+        android:id="@+id/notesbtn"
+        android:layout_width="294dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="59dp"
+        android:backgroundTint="@color/lightblue"
+        android:text="Notes"
+        android:textSize="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/englishbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

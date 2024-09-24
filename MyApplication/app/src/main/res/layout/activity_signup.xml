@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".SignupActivity">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/signup_logo"
+        android:layout_width="250dp"
+        android:layout_height="119dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- Welcome Text Image -->
+    <ImageView
+        android:id="@+id/signup_welcome"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        app:srcCompat="@drawable/heyhello" />
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/signup_instruction"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Enter your credentials to create \n your account" />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/signupUsername"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="17sp"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:drawablePadding="12dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_input"
+        android:inputType="text"
+        android:hint="User Name" />
+
+    <!-- Email Field -->
+    <EditText
+        android:id="@+id/signupEmail"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="17sp"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_input"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <!-- Mobile Field -->
+    <EditText
+        android:id="@+id/signupMobile"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="17sp"
+        android:inputType="phone"
+        android:drawableStart="@drawable/custom_phone_icon"
+        android:drawablePadding="12dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_input"
+        android:hint="Mobile" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="17sp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_input"
+        android:hint="Password" />
+
+    <!-- Re-Password Field -->
+    <EditText
+        android:id="@+id/reSignupPassword"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="17sp"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_input"
+        android:hint="Re Enter Password" />
+
+    <!-- Sign In Button -->
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/blue"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="Sign up" />
+
+    <!-- OR Image -->
+    <ImageView
+        android:id="@+id/or_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/or" />
+
+    <!-- Sign In with Google Button -->
+    <Button
+        android:id="@+id/button_google_sign_up"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="Sign up with Google" />
+
+    <!-- Sign Up Text -->
+    <TextView
+        android:id="@+id/text_sign_up_prompt"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="Already have an account?" />
+
+    <Button
+        android:id="@+id/directToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="Sign in"/>
+
+</LinearLayout>

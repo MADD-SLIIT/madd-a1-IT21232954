@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "937921144703",
+    "project_id": "eduace-5e7a9",
+    "storage_bucket": "eduace-5e7a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937921144703:android:a45d699eaee39dce9f9c4a",
+        "android_client_info": {
+          "package_name": "com.example.testapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsWit0_ZCeY5ROZ8o_g5yvEsNv27AfSCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
